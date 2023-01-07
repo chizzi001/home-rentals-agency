@@ -1,3 +1,13 @@
+/* SECTION UTILITIES */
+:root {
+    --dm-sans: 'DM Sans', sans-serif;
+    --inter: 'Inter', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --manrope: 'Manrope', sans-serif;
+
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,13 +18,19 @@ body {
     font-family: "segoe ui";
 }
 
+
+/* !SECTION */
+
+
+/* SECTION NAV-BAR */
+
 .nav-bar {
     margin: auto;
     position: relative;
 }
 
 .nav {
-    border-bottom: 2px solid #808080;
+    border-bottom: 0.5px solid #FFFFFF;
     height: 50px;
     width: 80%;
     background-color: transparent;
@@ -26,6 +42,11 @@ body {
     justify-content: flex-start;
     margin-left: 100px;
     z-index: 1;
+    font-family: var(--dm-sans);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 70.19%;
 }
 
 .nav-header {
@@ -53,13 +74,14 @@ body {
 
 .nav>.nav-links>a {
     display: inline-block;
-    padding: 13px 10px;
+    padding: 17px 10px;
+    margin: 0 20px;
     text-decoration: none;
     color: rgb(239, 239, 239);
 }
 
 .nav>.nav-links>a:hover {
-    border-bottom: 100px solid #e4e2e2;
+    border-bottom: 2.32181px solid #FFFFFF;
     /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
@@ -67,11 +89,17 @@ body {
     display: none;
 }
 
+/* !SECTION */
+
+
+
+/* SECTION HERO PAGE */
+
 .hero-container {
     position: relative;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.118);
-    padding-top: 5rem;
+    background-image: linear-gradient(200.44deg, #00000000 16.41%, #00000082 77.16%);
+    padding-top: 10rem;
     padding-bottom: 3rem;
     overflow-x: hidden;
 }
@@ -114,25 +142,33 @@ body {
 .hero-page {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 2rem;
 }
 
 .hero-text {
     /* flex-basis: 60%; */
-    max-width: 600px;
+    max-width: 500px;
+    /* margin: 3rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 70px;
+    /* or 135% */
+
+    letter-spacing: -1px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
     /* margin: 2rem 2rem 2rem 4rem; */
     /* padding: 1rem 2rem; */
 }
 
-.hero-text h1 {
-    color: rgb(255, 255, 255);
-    font-size: 3.325rem;
-}
 
 .hero-map {
     flex-basis: 30%;
@@ -158,10 +194,13 @@ body {
 .hero-search {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
     background-color: #fff;
-    border-radius: 10px;
     width: 400px;
+    height: 100px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
     /* max-width: 400px; */
     /* margin-left: 25px; */
 }
@@ -169,27 +208,86 @@ body {
 form {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    height: 60px;
+    width: 90%;
+    margin: auto;
+    /* justify-content: space-evenly; */
 }
 
 #house-type,
 #house-location {
-    padding: 1.5rem 2rem;
-    border: 1px solid #a0a1a0;
+    padding: 0 0.1rem;
+    height: 60px;
+    width: 100%;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.2px;
+
+    /* text-color */
+
+    color: #252B42;
+}
+
+#house-type {
+
+    border-radius: 5px 0px 0px 5px;
 }
 
 .search-icon {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    margin: 0;
     color: #ffffff;
-    background-color: #4d4d4d;
-    margin-left: 1rem;
+    /* primary-color */
+
+    background: #23A6F0;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 5px 5px 0px;
+    /* margin-left: 1rem; */
 }
+
+/* !SECTION */
+
+
+/* SECTION Minimum Living Cost Takes Care Of Everything */
+
+.living-cost-container {
+    margin: 5rem 2rem;
+}
+
+.minimum-living-cost h1 {
+    margin: 2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 64px;
+    /* identical to box height, or 178% */
+
+
+    text-transform: capitalize;
+    font-feature-settings: 'salt'on, 'liga'off;
+
+    /* Text / Gray 900 */
+
+    color: #18191F;
+}
+
+.minimum-living-cost h1 span {
+    border-bottom: 3px solid #F4511E;
+}
+
 
 .grid-view {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: auto;
     width: 95%;
     grid-column-gap: 2rem;
     /* border: 2px solid #000; */
@@ -228,27 +326,76 @@ form {
 }
 
 .vector-intro {
-    font-size: 26px;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    color: #18191f;
-    font-weight: 600;
+    font-family: var(--inter);
     font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
     line-height: 35px;
+    /* or 135% */
+
     text-transform: capitalize;
-    font-feature-settings: "salt"on, "liga"off;
+    font-feature-settings: 'salt'on, 'liga'off;
+
+    /* Text / Gray 900 */
+
+    color: #18191F;
 }
+
+/* !SECTION */
+
+
+/* SECTION LIST OF PROPERTIES */
 
 .list-of-property {
     display: grid;
     grid-template-columns: 360px 360px 360px;
     grid-gap: 5rem;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
 }
 
 .property {
     width: 360px;
 }
+
+.property h2 {
+    font-family: var(--dm-sans);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: -0.642075px;
+    text-transform: capitalize;
+
+    color: #000000;
+
+}
+
+
+.price {
+    margin: 1rem 0;
+    font-family: var(--dm-sans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.642075px;
+    text-transform: capitalize;
+
+    color: #818181;
+}
+
+
+.price span {
+    width: 100%;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 25.552px;
+    line-height: 33px;
+    letter-spacing: -0.642075px;
+    color: #F4511E;
+}
+
 
 .shower-bed {
     display: flex;
@@ -260,17 +407,11 @@ form {
 }
 
 
-
-.price span {
-    width: 100%;
-    display: inline-block;
-}
-
-
 .shower-bed img {
     /* border: 4px solid green; */
     width: 30px;
     height: 30px;
+    margin-right: 10px;
 }
 
 .bed,
@@ -279,6 +420,7 @@ form {
     display: flex;
     width: 32.514%;
     margin: 0;
+    padding: 5px 0;
     border-right: 2px solid #e4e4e4;
     justify-content: center;
     align-items: center;
@@ -287,3 +429,5 @@ form {
 .size {
     border-right: 0;
 }
+
+/* !SECTION */

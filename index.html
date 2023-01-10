@@ -166,8 +166,9 @@
                         List
                     </span>Of Properties
                 </h2>
-
-                <button class="btn">View All Property</button>
+                <div class="property-btn">
+                    <button class="btn">View All Property</button>
+                </div>
             </div>
             <div class="list-of-property">
                 <div class="property-1 property">
@@ -334,18 +335,142 @@
     <section class="lifestyle-container">
         <section class="lifestyle">
 
+            <div class="grantees">
+                <div class="img1 img">
+                    <img src="images/grantee-1.png" alt="">
+                </div>
+                <div class="img2 img">
+                    <img src="images/grantee-2.png" alt="">
+                </div>
+                <div class="img3 img">
+                    <img src="images/grantee-3.png" alt="">
+                </div>
+                <div class="img4 img">
+                    <img src="images/grantee-4.png" alt="">
+                </div>
+            </div>
+
+            <div class="grantees-intro">
+                <h1>
+                    Flexibility and options to suit your lifestyle
+                </h1>
+                <p>
+                    You need it? We got it. We make finding your next home easy, comfortable, and simple. From our
+                    happiness guarantee to our selective roommate finder option. We provide you the flexibility that you
+                    most desire.
+                </p>
+                <div class="grantee-btn">
+                    <button>Search Rooms</button>
+                </div>
+            </div>
+
         </section>
     </section>
 
     <section class="add-property-container">
         <section class="fill-property">
+            <h1>Your property with us and be Confident that Your Room will be Filled Out!</h1>
+            <div class="form-details">
+                <h3>Add A New Property</h3>
+                <form class="input-details">
+                    <div class="input-name">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="">
+                    </div>
 
+                    <div class="input-email">
+                        <label for="address">Address</label>
+                        <br>
+                        <input type="text" name="address" id="">
+                    </div>
+
+                    <div class="unit">
+                        <label for="unit-number">Unit Number</label>
+                        <br>
+                        <input type="text" name="unitNumber" id="">
+                    </div>
+
+                    <div class="add-cities">
+                        <label for="types">Room Type</label>
+                        <select id="cities" name="types">
+                            <option value="volvo">All Types</option>
+                        </select>
+                    </div>
+
+
+                    <div class="add-states">
+                        <label for="types">State</label>
+                        <select id="states" name="types">
+                            <option value="volvo">All Types</option>
+                        </select>
+                    </div>
+
+                    <div class="add-room">
+                        <label for="types">Room Type</label>
+                        <select id="roomType" name="types">
+                            <option value="volvo">All Types</option>
+                        </select>
+                    </div>
+                    <div class="input-price">
+                        <label for="price">Price</label>
+                        <br>
+                        <input type="text" name="price" id="price">
+                    </div>
+
+                    <div class="select-room">
+                        <label for="types">Room Type</label>
+                        <select id="roomType" name="types">
+                            <option value="gee">All Types</option>
+                        </select>
+                    </div>
+
+                    <div class="add-description">
+                        <textarea name="description" id="describe" placeholder="description..."></textarea>
+                    </div>
+                    <div class="upload-container">
+                        <div class="card">
+                            <h3>Upload Files</h3>
+                            <div class="drop_box">
+                                <header>
+                                    <h4>Select File here</h4>
+                                </header>
+                                <p>Files Supported: PDF, TEXT, DOC , DOCX</p>
+                                <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+                                <button class="btn">Choose File</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-add-property">
+                    <button class="btn">Add New Property</button>
+                </div>
+            </div>
         </section>
     </section>
 
     <section class="quote-container">
         <section class="quote">
+            <div class="quote-page">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum nisl et nunc facilisis, a
+                    commodo eros mollis. Nunc vel pellentesque est. Curabitur at odio sit amet libero vulputate
+                    efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa, faucibus id pretium ac, mattis eu
+                    velit. Donec sed risus a lacus fringilla finibus.
+                </p>
+                <div class="quote-img">
+                    <img src="images/quote-repo.png" alt="">
 
+                    <!-- <div class="quote-img-name"></div> -->
+                    <div class="quote-img-owner">
+                        <p>Harry Wilson</p>
+                        <p>Property Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-page">
+                <img src="images/video-repo.jpg" alt="">
+            </div>
         </section>
     </section>
 

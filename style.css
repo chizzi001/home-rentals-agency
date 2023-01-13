@@ -18,11 +18,50 @@
 
 }
 
+html {
+    /* background: linear-gradient(20.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 80.16%); */
+    /* background-image: url(images/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-position: left left; */
+}
+
 body {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: auto;
+    background-color: transparent;
     /* margin-bottom: 2rem; */
     font-family: "segoe ui";
+}
+
+h2 {
+    animation: headers 2s ease 0s infinite normal none;
+}
+
+@keyframes headers {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+select,
+input,
+textarea {
+    outline: none;
+}
+
+
+
+button:hover {
+    cursor: pointer;
 }
 
 
@@ -57,6 +96,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 70.19%;
+    box-sizing: content-box;
 }
 
 .nav-header {
@@ -84,7 +124,7 @@ body {
 
 .nav>.nav-links>a {
     display: inline-block;
-    padding: 17px 10px;
+    padding: 17.5px 10px;
     margin: 0 20px;
     text-decoration: none;
     color: rgb(239, 239, 239);
@@ -94,6 +134,8 @@ body {
 .nav>.nav-links>a:hover {
     border-bottom: 2.32181px solid #FFFFFF;
     /* background-color: rgba(0, 0, 0, 0.3); */
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
 }
 
 .nav>#nav-check {
@@ -127,10 +169,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    z-index: 1;
+    animation: hero-bg 5s ease-out 0s infinite alternate-reverse none;
+}
+
+@keyframes hero-bg {
+    0% {
+        background-position: center top;
+        background-size: 100%;
+    }
+
+    100% {
+        background-position: center top;
+        background-size: 150%;
+    }
 }
 
 .home-page {
     position: relative;
+    z-index: 10;
 }
 
 .background-img {
@@ -171,13 +228,25 @@ body {
     font-size: 30px;
     line-height: 70px;
     /* or 135% */
-
+    animation: heroPage 1s ease 0s 1 reverse both;
     letter-spacing: -1px;
     text-transform: capitalize;
 
     color: #FFFFFF;
     /* margin: 2rem 2rem 2rem 4rem; */
     /* padding: 1rem 2rem; */
+}
+
+@keyframes heroPage {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
 }
 
 
@@ -187,6 +256,29 @@ body {
     display: flex;
     flex-direction: column;
     /* border: 2px solid #fff; */
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    /* OR */
+    /* animation-name: ; */
+    /* animation-duration: ; */
+    /* animation-timing-function: ; */
+    /* animation-delay:  */
+    /* -o-animation-iteration-count:  */
+    /* animation-direction:  */
+    /* animation-fill-mode:  */
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .map-img,
@@ -265,7 +357,7 @@ body {
 /* !SECTION */
 
 
-/* SECTION Minimum Living Cost Takes Care Of Everything */
+/* SECTION MINIMUM LIVING COST CONTAINER */
 
 section.minimum-living-cost {
     width: 100%;
@@ -275,9 +367,10 @@ section.minimum-living-cost {
 .living-cost-container {
     width: 90%;
     margin: auto;
+    padding: 3.125rem 0;
 }
 
-.minimum-living-cost h1 {
+.minimum-living-cost h2 {
     margin: 2rem;
     font-family: 'Inter';
     font-style: normal;
@@ -285,17 +378,15 @@ section.minimum-living-cost {
     font-size: 36px;
     line-height: 64px;
     /* identical to box height, or 178% */
-
-
     text-transform: capitalize;
     font-feature-settings: 'salt'on, 'liga'off;
 
     /* Text / Gray 900 */
-
     color: #18191F;
+    padding-left: 25px;
 }
 
-.minimum-living-cost h1 span {
+.minimum-living-cost h2 span {
     border-bottom: 3px solid #F4511E;
 }
 
@@ -310,6 +401,8 @@ section.minimum-living-cost {
 }
 
 
+
+
 .house-img {
     grid-row: 1 / span 2;
     background-color: #C4C4C4;
@@ -319,8 +412,23 @@ section.minimum-living-cost {
     height: 550px;
     /* margin: 0 2rem; */
     padding-top: 50px;
+    animation: smhh 2s ease-out 0s infinite alternate-reverse backwards;
+
 }
 
+@keyframes smhh {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .house-img img {
     box-shadow: 5px 24px 53px rgba(0, 0, 0, 0.25);
@@ -337,6 +445,34 @@ section.minimum-living-cost {
     background: #FFFFFF;
     box-shadow: 0px 12px 19px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    animation: palap 2s ease-out 0s infinite alternate-reverse none;
+
+}
+
+@keyframes palap {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
 }
 
 .vector-intro {
@@ -353,28 +489,33 @@ section.minimum-living-cost {
     /* Text / Gray 900 */
 
     color: #18191F;
+
 }
 
 /* !SECTION */
 
 
-/* SECTION LIST OF PROPERTIES */
+/* SECTION LIST OF PROPERTIES CONTAINER */
 
 
 section.properties-container {
     width: 90%;
     margin: auto;
+    padding: 3.125rem 0;
 }
 
 .header {
     display: flex;
     width: 100%;
     margin: 2rem 0;
+    align-items: center;
+    height: 100px;
 }
 
 .header h2 {
     width: 50%;
     display: inline-block;
+    padding-left: 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
@@ -382,12 +523,10 @@ section.properties-container {
     line-height: 64px;
     /* margin-left: 2rem; */
     /* identical to box height, or 178% */
-
     text-transform: capitalize;
     font-feature-settings: 'salt'on, 'liga'off;
 
     /* Text / Gray 900 */
-
     color: #18191F;
 }
 
@@ -395,7 +534,7 @@ section.properties-container {
     border-bottom: 3px solid #F4511E;
 }
 
-.property-btn {
+/* .property-btn {
 
     width: 50%;
 
@@ -420,19 +559,90 @@ section.properties-container {
     text-align: center;
 
     color: #FFFFFF;
-}
+} */
 
 
 .list-of-property {
+    /* padding-top: 20px; */
+    /* padding-right: 20px; */
+    padding: 20px 30px;
     display: grid;
-    grid-template-columns: 1FR 1FR 1FR;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5rem;
+    max-height: 1900px;
     /* justify-content: center; */
     /* align-items: center; */
 }
 
 .property {
     width: 100%;
+    animation: house 2s ease-out 0s infinite alternate-reverse backwards;
+}
+
+@keyframes house {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+.property:hover {
+    animation: property 3s ease-out 0s infinite alternate-reverse none;
+    cursor: pointer;
+}
+
+@keyframes property {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+
 }
 
 .property>img {
@@ -515,8 +725,11 @@ section.properties-container {
 /* !SECTION */
 
 
-/* SECTION Lifestyle-container */
+/* SECTION LIFESTYLE CONTAINER */
 
+section.lifestyle-container {
+    padding: 3.125rem 0;
+}
 
 .lifestyle {
     display: flex;
@@ -539,6 +752,19 @@ section.properties-container {
 
     display: inline-block;
     margin: 2rem;
+    animation: flexibility 1s ease-out 0s infinite alternate-reverse backwards;
+}
+
+@keyframes flexibility {
+    0% {
+        /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
+        transform: scale(1);
+    }
+
+    100% {
+        /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); */
+        transform: scale(1.1);
+    }
 }
 
 .grantees {
@@ -556,24 +782,28 @@ section.properties-container {
     display: flex;
     flex-basis: 250px;
     align-items: flex-start;
+    animation: palap 2s ease-out 0s infinite alternate-reverse none;
 }
 
 .grantees .img2 {
     display: flex;
     flex-basis: 270px;
     align-items: flex-end;
+    animation: palap 2s ease-out 0s infinite reverse none;
 }
 
 .grantees .img3 {
     display: flex;
     flex-basis: 212px;
     align-items: flex-start;
+    animation: palap 2s ease-out 0s infinite reverse none;
 }
 
 .grantees .img4 {
     display: flex;
     flex-basis: 338px;
     align-items: flex-end;
+    animation: palap 2s ease-out 0s infinite alternate none;
 }
 
 .grantees-intro h1 {
@@ -630,6 +860,15 @@ section.properties-container {
     text-align: center;
     font-feature-settings: 'salt'on, 'liga'off;
 
+}
+
+/* !SECTION */
+
+
+/* SECTION ADD PROPERTIES CONTAINER */
+
+section.add-property-container {
+    padding: 3.125rem 0;
 }
 
 .fill-property {
@@ -764,6 +1003,10 @@ section.properties-container {
     border: 1px dashed #F4511E;
     border-radius: 10px;
     width: 100%;
+    /* border: 1px solid #ccc; */
+    /* display: inline-block; */
+    /* padding: 6px 12px; */
+    cursor: pointer;
 }
 
 .drop_box h4 {
@@ -837,10 +1080,20 @@ section.properties-container {
     outline: 1px solid #010101;
 }
 
+
+/* !SECTION */
+
+
+/* SECTION QUOTE CONTAINER */
+
+section.quote-container {
+    padding: 3.125rem 0 0;
+}
+
 .quote {
     /* margin-top: 2rem; */
     background: rgba(244, 81, 30, 0.07);
-    margin: 7rem auto 2rem;
+    margin: 7rem auto 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -849,6 +1102,53 @@ section.properties-container {
 .quote-page {
     margin: 1rem 2rem 1rem 4.5rem;
     width: 60%;
+    animation: quote 2s ease-out 0s infinite alternate-reverse backwards;
+}
+
+@keyframes quote {
+    0% {
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
 }
 
 .quote-page p {
@@ -934,9 +1234,13 @@ section.properties-container {
     flex-grow: 0;
 }
 
-/* Footer Styling */
+/* !SECTION */
+
+
+/* SECTION FOOTER CONTAINER */
 
 footer {
+    padding: 3.125rem 0;
     /* margin: 10px; */
     /* border: 2px solid #0000ff; */
     z-index: 2;
@@ -1100,5 +1404,49 @@ ion-icon {
     /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
+/* !SECTION */
+
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    /* position: relative; */
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn::before {
+    background: #ff7675;
+    content: "";
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1::before {
+    width: 0%;
+    height: 100%;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
 
 /* https://dev.to/github/10-standout-github-profile-readmes-h2o */

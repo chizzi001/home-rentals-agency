@@ -534,7 +534,7 @@ section.properties-container {
     border-bottom: 3px solid #F4511E;
 }
 
-/* .property-btn {
+.property-btn {
 
     width: 50%;
 
@@ -559,7 +559,15 @@ section.properties-container {
     text-align: center;
 
     color: #FFFFFF;
-} */
+}
+
+.property-btn button:hover,
+.grantee-btn button:hover {
+    background-color: #f3ccc0;
+    transition: all 0.3s ease-in-out;
+    color: #F4511E;
+    font-weight: 600;
+}
 
 
 .list-of-property {
@@ -613,33 +621,13 @@ section.properties-container {
 
 @keyframes property {
 
-    0%,
-    100% {
-        transform: rotate(0deg);
+    0% {
+        transform: rotate(2deg);
         transform-origin: 50% 0;
     }
 
-    10% {
-        transform: rotate(2deg);
-    }
 
-    20%,
-    40%,
-    60% {
-        transform: rotate(-4deg);
-    }
-
-    30%,
-    50%,
-    70% {
-        transform: rotate(4deg);
-    }
-
-    80% {
-        transform: rotate(-2deg);
-    }
-
-    90% {
+    100% {
         transform: rotate(2deg);
     }
 
@@ -859,8 +847,9 @@ section.lifestyle-container {
     line-height: 20px;
     text-align: center;
     font-feature-settings: 'salt'on, 'liga'off;
-
 }
+
+
 
 /* !SECTION */
 
@@ -1076,8 +1065,7 @@ section.add-property-container {
     background-color: #ffffff;
     color: #f4511e;
     padding: 10px 20px;
-    border: none;
-    outline: 1px solid #010101;
+    border: 1px outset #d6d5d5;
 }
 
 
@@ -1407,46 +1395,12 @@ ion-icon {
 /* !SECTION */
 
 
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.btn {
-    /* position: relative; */
-    display: block;
-    color: white;
-    font-size: 14px;
-    font-family: "montserrat";
-    text-decoration: none;
-    margin: 30px 0;
-    border: 2px solid #ff7675;
-    padding: 14px 60px;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 1s all ease;
-}
-
-.btn::before {
-    background: #ff7675;
-    content: "";
-    /* position: absolute; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: all 0.6s ease;
-}
-
-.btn1::before {
-    width: 0%;
-    height: 100%;
-}
-
-.btn1:hover::before {
-    width: 100%;
-}
-
 /* https://dev.to/github/10-standout-github-profile-readmes-h2o */
+
+/* https://codepen.io/webLeister/pen/XwGENz
+
+https://codepen.io/andrewmillen/pen/MoKLob
+
+https://codepen.io/hakimel/pen/ZYRgwB
+
+https://codepen.io/lbebber/pen/LELBEo */

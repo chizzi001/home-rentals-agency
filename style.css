@@ -215,7 +215,7 @@ button:hover {
 }
 
 .hero-text {
-    /* flex-basis: 60%; */
+    flex-basis: 60%;
     max-width: 500px;
     /* margin: 3rem; */
     display: flex;
@@ -231,7 +231,6 @@ button:hover {
     animation: heroPage 1s ease 0s 1 reverse both;
     letter-spacing: -1px;
     text-transform: capitalize;
-
     color: #FFFFFF;
     /* margin: 2rem 2rem 2rem 4rem; */
     /* padding: 1rem 2rem; */
@@ -251,7 +250,7 @@ button:hover {
 
 
 .hero-map {
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     max-width: 700px;
     display: flex;
     flex-direction: column;
@@ -397,7 +396,7 @@ section.minimum-living-cost {
     width: 100%;
     grid-column-gap: 2rem;
     /* border: 2px solid #000; */
-    align-items: center;
+    align-items: stretch;
 }
 
 
@@ -638,7 +637,7 @@ section.properties-container {
     width: 100%;
 }
 
-.property h2 {
+.property h3 {
     font-family: var(--dm-sans);
     font-style: normal;
     font-weight: 700;
@@ -762,11 +761,10 @@ section.lifestyle-container {
     /* overflow: hidden; */
 }
 
-.grantees .img {
-    margin: 1rem;
-}
+.grantees .img {}
 
 .grantees .img1 {
+    margin: 0 1rem;
     display: flex;
     flex-basis: 250px;
     align-items: flex-start;
@@ -774,6 +772,7 @@ section.lifestyle-container {
 }
 
 .grantees .img2 {
+    margin: 1rem 0 0 1rem;
     display: flex;
     flex-basis: 270px;
     align-items: flex-end;
@@ -781,6 +780,7 @@ section.lifestyle-container {
 }
 
 .grantees .img3 {
+    margin: 1rem;
     display: flex;
     flex-basis: 212px;
     align-items: flex-start;
@@ -788,6 +788,7 @@ section.lifestyle-container {
 }
 
 .grantees .img4 {
+    margin: 1rem 0 1rem 1rem;
     display: flex;
     flex-basis: 338px;
     align-items: flex-end;
@@ -1395,9 +1396,96 @@ ion-icon {
 /* !SECTION */
 
 
+
+
+/* SECTION MEDIA QUERIES */
+
+
+@media (max-width:1000px) {
+    .hero-text {
+        font-size: 30px;
+    }
+
+    .hero-map {
+        width: 70%;
+        align-items: center;
+    }
+
+    .minimum-living-cost h2 {
+        font-size: 25px;
+    }
+
+    .house-img,
+    .house-img img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .vector-intro {
+        font-size: 18px;
+    }
+
+    .header h2 {
+        font-size: 25px;
+    }
+
+    .property-btn button {
+        height: 50px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .property h3,
+    .price span {
+        font-size: 20px;
+    }
+
+    .grantees .img1 {
+        flex-basis: 200px;
+    }
+
+    .grantees .img2 {
+        flex-basis: 220px;
+
+    }
+
+    .grantees .img3 {
+        flex-basis: 180px;
+
+    }
+
+    .grantees .img4 {
+        flex-basis: 250px;
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* https://dev.to/github/10-standout-github-profile-readmes-h2o */
 
-/* https://codepen.io/webLeister/pen/XwGENz
+/* NOTE DIFFERENT BUTTONS STYLES
+https://codepen.io/webLeister/pen/XwGENz
 
 https://codepen.io/andrewmillen/pen/MoKLob
 

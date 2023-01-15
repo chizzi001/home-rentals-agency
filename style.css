@@ -1239,7 +1239,7 @@ footer {
 
 .main-footer-upper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     /* border: 2px solid #0000ff; */
@@ -1247,7 +1247,7 @@ footer {
 
 
 .main-footer-row1 {
-    flex-basis: 35%;
+    /* flex-basis: 35%; */
     line-height: 1.5;
     padding: 10px;
     order: 2;
@@ -1443,31 +1443,127 @@ ion-icon {
     }
 
     .grantees .img1 {
-        flex-basis: 200px;
+        flex-basis: 180px;
     }
 
     .grantees .img2 {
-        flex-basis: 220px;
+        flex-basis: 200px;
 
     }
 
     .grantees .img3 {
-        flex-basis: 180px;
+        flex-basis: 160px;
 
     }
 
     .grantees .img4 {
-        flex-basis: 250px;
+        flex-basis: 230px;
 
     }
 
+    .grantees-intro h1 {
+        font-size: 30px;
+    }
 
+    .grantees-intro p {
+        font-size: 16px;
+    }
 
+    .grantee-btn {
+        margin-top: 1rem;
+    }
 
+    .grantee-btn button {
+        height: 55px;
+    }
 
+    .quote-page p {
+        font-size: 16px;
+    }
 
 }
 
+@media (max-width:900px) {
+    .hero-text {
+        font-size: 25px;
+    }
+
+    .hero-map {
+        width: 50%;
+    }
+
+    .vector-intro {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .property h3,
+    .price span {
+        font-size: 18px;
+    }
+
+    .lifestyle {
+        flex-direction: column-reverse;
+    }
+
+    .grantees {
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .grantees-intro {
+        width: 80%;
+    }
+
+    .grantees .img1 {
+        flex-basis: 250px;
+    }
+
+    .grantees .img2 {
+        flex-basis: 270px;
+
+    }
+
+    .grantees .img3 {
+        flex-basis: 210px;
+
+    }
+
+    .grantees .img4 {
+        flex-basis: 338px;
+
+    }
+
+    .fill-property form {
+        grid-template-columns: 45% 45%;
+    }
+
+    .btn-add-property .btn {
+        width: 300px;
+    }
+
+}
+
+
+@media (max-width:800px) {
+    .hero-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        align-self: flex-start;
+        margin-left: 3rem;
+    }
+
+    .hero-map{
+        width:700px;
+    }
+
+}
 
 
 

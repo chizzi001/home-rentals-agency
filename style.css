@@ -1408,7 +1408,7 @@ ion-icon {
 
     .hero-map {
         width: 70%;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .minimum-living-cost h2 {
@@ -1549,23 +1549,93 @@ ion-icon {
 
 
 @media (max-width:800px) {
-    .hero-page {
+    /* .hero-page {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
-    .hero-text {
+    /* .hero-text {
         align-self: flex-start;
         margin-left: 3rem;
+    } */
+
+    .hero-map,
+    .map-img,
+    .hero-search {
+        width: 300px;
     }
 
-    .hero-map{
-        width:700px;
+    .map-img img {
+        width: 300px;
     }
 
+    .grid-view {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .house-img {
+        display: none;
+    }
 }
 
+@media (max-width:760px) {
+    .hero-container::before {
+        animation: none;
+    }
 
+    .hero-map {
+        display: none;
+    }
+
+    .list-of-property {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grantees .img1 {
+        flex-basis: 35%;
+    }
+
+    .grantees .img2 {
+        flex-basis: 45%;
+    }
+
+    .grantees .img3 {
+        flex-basis: 30%;
+    }
+
+    .grantees .img4 {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .fill-property form {
+        grid-template-columns: auto;
+    }
+
+    .add-description {
+        grid-row: 9/10;
+    }
+
+    .upload-container {
+        grid-row: 10/11;
+    }
+}
+
+@media (max-width:500px) {
+    .grid-view {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list-of-property {
+        display: inline-block;
+        /* grid-template-columns: auto; */
+    }
+
+    .property:hover {
+        animation: none;
+    }
+}
 
 
 

@@ -1512,7 +1512,7 @@ ion-icon {
         z-index: -1;
         top: 0;
         right: 0;
-        width: 280px;
+        width: 300px;
         height: 100%;
         background: #fff;
         box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
@@ -1523,6 +1523,7 @@ ion-icon {
         align-items: flex-end;
         margin-top: 80px;
         width: 100%;
+        color: #000000;
     }
 
     .nav-tab:not(:last-child) {

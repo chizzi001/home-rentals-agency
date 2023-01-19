@@ -74,6 +74,7 @@ button:hover {
 } */
 
 .nav-wrapper {
+    overflow: hidden;
     max-width: 1200px;
     display: flex;
     /* 	position: relative; */
@@ -87,13 +88,14 @@ button:hover {
     margin: auto;
     margin-left: 1rem;
     width: 90%;
-    height: 100px;
-    /* border-bottom: 10px solid green; */
+    height: 90px;
+    border-bottom: 2px solid #e6e6e6;
     /* border-radius: 0 0 15px 15px; */
     padding: 0 100px 0 50px;
-    z-index: 200;
-    background: transparent;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 20000;
+    background-image: linear-gradient(200.44deg, #00000082 16.41%, #00000082 77.16%);
+    /* background: transparent; */
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
 }
 
 .logo-container {
@@ -109,6 +111,7 @@ button:hover {
 }
 
 .nav-tabs {
+    overflow: hidden;
     display: flex;
     /* font-weight: 600; */
     /* font-size: 18px; */
@@ -124,14 +127,21 @@ button:hover {
     color: #FFFFFF;
 }
 
-.nav-tab:not(:last-child) {
-    padding: 10px 25px;
-    margin: 0;
+.nav-tab {
+    overflow: hidden;
+    padding: 36.5px 25px;
+    margin: 0 0.725rem;
     /* border-right: 1px solid #eee; */
 }
 
-.nav-tab:last-child {
+/* .nav-tab:last-child {
+    overflow: hidden;
     padding: 10px 0 0 25px;
+} */
+
+.nav-tab:hover {
+    transition: all 0.05s ease-in-out;
+    border-bottom: 3px solid #e6e6e6;
 }
 
 .nav-tab,
@@ -1407,6 +1417,10 @@ ion-icon {
 
     .nav {
         margin-left: 50px;
+    }
+
+    .nav-tab {
+        margin: 0;
     }
 
     .hero-text {

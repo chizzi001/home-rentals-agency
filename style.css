@@ -859,7 +859,7 @@ section.add-property-container {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgba(244, 81, 30, 0.01);
+    background: #f4511e03;
     border: 1px dashed #F4511E;
     border-radius: 10px;
     width: 100%;
@@ -1000,7 +1000,6 @@ section.quote-container {
 .video-page img {
     width: 600px;
     height: 490px;
-
 }
 
 
@@ -1063,7 +1062,6 @@ footer {
     order: 1;
     text-align: start;
 }
-
 
 .main-container {
     max-width: 1200px;
